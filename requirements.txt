@@ -47,6 +47,5 @@ typing-extensions
 typing-inspect
 tzdata
 urllib3
-xformers
 xxhash
 yarl
