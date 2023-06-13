@@ -36,7 +36,7 @@ SECRET_KEY = 'django-insecure-+o9*h+hjpmf048-7hk&j+4j(8vmc@5fan2y7$gm2x-7g3yvz7=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -88,16 +88,11 @@ WSGI_APPLICATION = 'NetworkAIMVP.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'NetworkAIMVP',
-        'USER': 'postgres',
-        'PASSWORD':'123',
-        'HOST': '127.0.0.1', 
-        
-    }
+     'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
 }
-
+}
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
